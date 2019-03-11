@@ -35,9 +35,12 @@ Note: You do not have to rerun the script to make multiple flash drives, as long
 `MakeWinPEMedia /UFD C:\WinPE [flash drive letter]`  
 
 ## Forensic Information  
+Below is the testing I've done pertaining to the forensic integrity of the WinFE environment. Tests were made using FTK Imager on an internal drive, creating images onto an external USB hard drive. DON'T TAKE MY WORD FOR IT, TEST IN YOUR ENVIRONMENT FIRST BEFORE DEPLOYING IN PRODUCTION:  
 - The bootable device will NOT mount internal drives automatically  
-- Internal drives will be mounted as READ ONLY  
-- 
+- Removable devices WILL be mounted automatically in Read-Write mode  
+  - External Disks (MyPassPort, etc.) will NOT mount automatically, but will mount in Read-Write mode when mounted  
+- When mounting Internal drives, they will be mounted as READ ONLY by default  
+- You can traverse internal drive directories and view files without changing the integrity of the disk image  
 
 ## Example Tools  
 - FTK Imager (command line)
