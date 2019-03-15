@@ -11,12 +11,14 @@ Example usage:
 Windows 10  
 Flash Drive  
 Pre-determined tools folder  
+Windows ADK for Windows 10  
 
 ## Instructions
 1. Install Windows ADK for Windows 10  
 `https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install`  
 - Version 1809 and above:  
    Download the Windows ADK for Windows 10 AND the Windows PE add-on for the ADK  
+   You only need to select "Deployment Tools" in the ADK installation  
    
 - Version 1803 and lower:  
    Download the ADK for Windows 10, version x in the Other ADK downloads section  
@@ -35,7 +37,7 @@ Note: You do not have to rerun the script to make multiple flash drives, as long
 `MakeWinPEMedia /UFD C:\WinPE [flash drive letter]`  
 
 ## Forensic Information  
-Below is the testing I've done pertaining to the forensic integrity of the WinFE environment. Tests were made using FTK Imager on an internal drive, creating images onto an external USB hard drive. DON'T TAKE MY WORD FOR IT, TEST IN YOUR ENVIRONMENT FIRST BEFORE DEPLOYING IN PRODUCTION:  
+Below is the testing I've done pertaining to the forensic integrity of the WinFE environment. Tests were made using FTK Imager Lite on an internal drive, creating images onto an external USB hard drive. DON'T TAKE MY WORD FOR IT, TEST IN YOUR ENVIRONMENT FIRST BEFORE DEPLOYING IN PRODUCTION:  
 - The bootable device will NOT mount internal drives automatically  
 - Removable devices WILL be mounted automatically in Read-Write mode  
   - External Disks (MyPassPort, etc.) will NOT mount automatically, but will mount in Read-Write mode when mounted  
@@ -43,4 +45,5 @@ Below is the testing I've done pertaining to the forensic integrity of the WinFE
 - You can traverse internal drive directories and view files without changing the integrity of the disk image  
 
 ## Example Tools  
-- FTK Imager (command line)
+- FTK Imager Lite
+- Q-DIR
