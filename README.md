@@ -1,11 +1,11 @@
-# WinFE
+# AutoWinFE
 Create a Windows Forensics Environment using WinPE on a USB device. This will allow you to boot any machine into a Windows environment and use a limited selection of Windows tools (GUI or CLI).
 
 ## Usage  
 `winFE.bat [tools folder] [flash drive letter]`  
 
 Example usage:  
-&nbsp;&nbsp;&nbsp;&nbsp;`winFE.bat C:\tools J`  
+`winFE.bat C:\tools J`  
 
 ## Requirements
 Windows 10  
