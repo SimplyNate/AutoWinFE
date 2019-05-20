@@ -2,6 +2,7 @@
 Create a Windows Forensics Environment using WinPE on a USB device. This will allow you to boot any machine into a Windows environment and use a limited selection of Windows tools (GUI or CLI).
 
 ## Usage  
+From the Deployment and Imaging Tools Environment:  
 `winFE_[x86/x64].bat [tools folder] [flash drive letter]`  
 
 Example usage:  
