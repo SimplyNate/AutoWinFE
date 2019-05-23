@@ -27,13 +27,15 @@ Windows ADK for Windows 10
 
 2. Run the "Deployment and Imaging Tools Environment" as an Administrator  
 `cmd /k "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\DandISetEnv.bat"`  
-
+  This will NOT run correctly in the regular Command Prompt!
+  
 3. Navigate to this script's directory  
 4. Plug in a flash drive and take note of the drive letter  
 5. Run the script using your tools folder and the flash drive letter  
 `winFE_x86.bat [x86tools folder] [flash drive letter]`  
 or  
 `winFE_x64.bat [x64tools folder] [flash drive letter]`  
+  This will wipe ALL the contents in the flash drive.
   
 ## Creating Multiple Bootable Devices  
 Note: You do not have to rerun the script to make multiple flash drives, as long as you don't want to make any changes to the image. Run the following command to create more flash drives with the same settings:  
